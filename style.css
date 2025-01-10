@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ h1
+  {
+    color: #e74f4f;
+
+  }
+  h1:hover
+  {
+    color: rgb(14, 133, 237);
+    background-color: rgb(247, 241, 244);
+  }
+  body {
+    background-color: #121515e4;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 0 2rem rgba(169, 197, 212, 0.795);
+    font-size: 6vmin;
+    color: #32026c;
+    background-color: #eaf4f2;
+  }
+ 
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #ef7008db;
+    color: #121312;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #59c7ec;
+    color: #e74f4f;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: #ef0b0b;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .box:hover
+  {
+     box-sizing: 6px;
+     
+     background :rgb(120, 198, 214);  
+     font-size: 55px;
+  }
+  #reset-btn:hover
+{
+  box-sizing: 16px;
+     
+     background :rgb(3, 156, 186);  
+     font-size: 25px;
+}
+.tic
+{
+  background-color: black;
+}
+
+h1
+{
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+p{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(150vw);
+    transform: scaleX(2);
+  }
+  to {
+    transform: translateX(0);
+    transform: scaleX(1);
+  }
+}
